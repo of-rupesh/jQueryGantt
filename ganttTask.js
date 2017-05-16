@@ -52,6 +52,7 @@ function Task(id, name, code, level, start, end, duration, collapsed) {
   this.code = code;
   this.level = level;
   this.status = "STATUS_UNDEFINED";
+  this.depType ='FS';
   this.depends = "";
   this.canWrite = true; // by default all tasks are writeable
 
